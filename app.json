@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Paycheck Calculator",
+    "slug": "paychecklink",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0466c8"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.paychecklink.calculator"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0466c8",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.paychecklink.calculator"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": ""
+      }
+    }
+  }
+}

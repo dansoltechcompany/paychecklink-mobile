@@ -10,9 +10,9 @@ import {
   TextInput,
   View,
 } from "react-native";
-import { calculatePaycheck } from "../lib/calculator";
-import type { FilingStatus, PayFrequency, PayType, StateCode } from "../lib/types";
-import { ALL_STATES, FREQUENCY_LABELS, STATE_NAMES } from "../lib/types";
+import { calculatePaycheck } from "./lib/calculator";
+import type { FilingStatus, PayFrequency, PayType, StateCode } from "./lib/types";
+import { ALL_STATES, FREQUENCY_LABELS, STATE_NAMES } from "./lib/types";
 
 const BRAND = "#0466c8";
 const PAPER = "#eaf3fb";

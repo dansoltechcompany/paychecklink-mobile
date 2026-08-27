@@ -1,27 +1,40 @@
-# PaycheckLink mobile (React Native / Expo)
+# PaycheckLink Mobile
 
-US paycheck calculator app sharing the same TypeScript tax engine as [paychecklink.com](https://paychecklink.com).
+Standalone React Native (Expo) app for **Paycheck Calculator** — Android / iOS.
+
+Uses a **copy** of the paychecklink.com tax engine in `lib/` (same `calculatePaycheck` logic as the website).
 
 ## Run
 
 ```bash
-cd mobile
 npm start
 ```
 
-Then scan the QR code with **Expo Go** on your phone, or press `a` for Android emulator.
+Scan the QR code with **Expo Go**, or press `a` for Android emulator.
 
-From the repo root: `npm run mobile`
+## Sync tax rates from the website
 
-## Shared engine
+When you update tax tables on the main PaycheckLink site, copy these files into this project:
 
-`App.tsx` imports `calculatePaycheck` from `../lib/calculator` — same federal / FICA / state logic as the website. When you update rates on the web, the app picks them up automatically.
+```
+From: Salary Paycheck Calculator/
+  lib/calculator.ts
+  lib/types.ts
+  lib/tax/*.ts   (skip *.test.ts files)
 
-## Play Store later
+To: PaycheckLink Mobile/lib/
+```
 
-Use [EAS Build](https://docs.expo.dev/build/introduction/) when you are ready to publish:
+Then test the app and commit.
+
+## Play Store (later)
 
 ```bash
-cd mobile
 npx eas build -p android --profile preview
 ```
+
+Package: `com.paychecklink.calculator`
+
+## Related project
+
+Website repo: `Salary Paycheck Calculator` (paychecklink.com)

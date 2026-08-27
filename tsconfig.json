@@ -3,12 +3,5 @@
   "compilerOptions": {
     "strict": true
   },
-  "include": [
-    "App.tsx",
-    "index.ts",
-    "../lib/calculator.ts",
-    "../lib/types.ts",
-    "../lib/tax/**/*.ts"
-  ],
-  "exclude": ["../lib/tax/**/*.test.ts", "../lib/seo"]
+  "include": ["**/*.ts", "**/*.tsx", "lib/**/*.ts"]
 }

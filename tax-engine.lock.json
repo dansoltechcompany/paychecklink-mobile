@@ -1,0 +1,21 @@
+{
+  "sourceRepo": "https://github.com/dansoltechcompany/paychecklink.git",
+  "sourceCommit": "e1a41a6350eb6c335ff428ac73c149c1cebed584",
+  "syncedAt": "2026-08-28T05:33:49.342Z",
+  "files": {
+    "lib/calculator.ts": "1eb607c80825f80dd67d50811439c51b05945f6f96f62ddb5de4e472439ee3dd",
+    "lib/types.ts": "25284adc6a15293af4cd9ef404d191b70e071aa30554a2ef3bd17803ddc84f39",
+    "lib/tax/ca-credits.ts": "16a1a26a811bed18ad6336950a654bd81b3b7362ba101438677425d3270915ea",
+    "lib/tax/ca-sdi.ts": "84f25f1c6fd01d9fd133d9a6368e125f8a40d4acdf15ca5505ad8062fb750ebb",
+    "lib/tax/canada.ts": "7072962aae5b80f716fa1fd011364cb54f14a084364c00409c54b55b697116c0",
+    "lib/tax/federal-withholding.ts": "3984e3b020b3226e252288016021e61f05315090635080400d9828e43c3ceba6",
+    "lib/tax/federal.ts": "a399a775bf713126724d44c477f33134aea4da128aadba628a0c77d8bd945015",
+    "lib/tax/fica.ts": "3fdac4b5fd267ae40c9c1969bb5f3b896042414822e307af94cb3443e1403691",
+    "lib/tax/international.ts": "198d4210ce4bad66c4687c7aee5e7a6b806815766676e9f8e0eabdafd9a2a6ab",
+    "lib/tax/local.ts": "5067222d1a35b560b4e74ed5cb3d94ae83e238be7945275b38d969c6a7ba0fde",
+    "lib/tax/md-local.ts": "b83ae6ada9b520eb2b7064ed95dce0cfd362c48b7a67f3453bd0d86eede360b5",
+    "lib/tax/nyc-local.ts": "c2c3672dc2fb3532756497c0a30d9b8288c78b76e763846a3cf128b06f3da353",
+    "lib/tax/state.ts": "10fcb3a08e0acdaec6411ebe12c0a920b6cfa8bb332ef75fa2a9345a4f11825b",
+    "lib/tax/uk.ts": "4032b3585b0a83c9aea9dfbaa7f72bb81c58adb41696e6f9312e1a720d21c67a"
+  }
+}

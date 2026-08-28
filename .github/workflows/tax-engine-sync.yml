@@ -1,0 +1,30 @@
+name: Tax engine sync
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  schedule:
+    # Catch website rate fixes that were never copied into this app.
+    - cron: "17 12 * * 1"
+  workflow_dispatch:
+
+jobs:
+  check:
+    name: Match paychecklink.com tax engine
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout mobile app
+        uses: actions/checkout@v4
+
+      - name: Checkout website tax engine
+        uses: actions/checkout@v4
+        with:
+          repository: dansoltechcompany/paychecklink
+          path: .website-engine
+          token: ${{ secrets.PAYCHECKLINK_REPO_TOKEN || github.token }}
+
+      - name: Fail if tax files drifted
+        run: node scripts/tax-engine-sync.mjs check
+        env:
+          TAX_ENGINE_SOURCE: ${{ github.workspace }}/.website-engine

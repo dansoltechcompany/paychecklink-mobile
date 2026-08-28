@@ -16,7 +16,10 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "tax:check": "node scripts/tax-engine-sync.mjs check",
+    "tax:sync": "node scripts/tax-engine-sync.mjs sync",
+    "test": "node scripts/tax-engine-sync.mjs check"
   },
   "private": true
 }

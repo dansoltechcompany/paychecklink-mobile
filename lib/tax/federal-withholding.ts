@@ -219,13 +219,3 @@ export function supplementalFederalRate(annualBonusTotal: number): number {
 
 export const FEDERAL_WITHHOLDING_SOURCE =
   "IRS Publication 15-T (2026) — Worksheet 1A Percentage Method + Annual Percentage Method tables";
-
-/** Serializable config for Android / other native clients (keep in sync via export script). */
-export const FEDERAL_WITHHOLDING_EXPORT = {
-  step1gAdjustment: STEP1G_ADJUSTMENT,
-  standardBrackets: WITHHOLDING_BRACKETS,
-  step2Brackets: STEP2_CHECKED_BRACKETS,
-  supplementalRate: SUPPLEMENTAL_RATE,
-  supplementalRateHigh: SUPPLEMENTAL_RATE_HIGH,
-  supplementalHighThreshold: SUPPLEMENTAL_HIGH_THRESHOLD,
-} as const;
